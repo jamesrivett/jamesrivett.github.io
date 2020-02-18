@@ -1,0 +1,282 @@
+/*------------------------ housekeeping ------------------------*/
+
+html {
+    width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+}
+
+/*------------------------ define ------------------------*/
+
+@font-face{
+	font-family: bebasneue; src: url("../font/BebasNeue.otf");
+}
+
+@font-face {
+	font-family: caviardreams; src: url("../font/CaviarDreams.ttf");
+}
+
+/*----------------------- random -----------------------*/
+
+.spacer {
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+}
+
+/*----------------------- header -----------------------*/
+
+.header {
+	font-family: bebasneue;
+	width: 100%;
+	background: #2D2D2D;
+	top: 0;
+	position: fixed;
+}
+
+div.header a {
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+}
+
+div.header a:active {
+	color: pink;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.logo {
+  font-size: 500%;
+  padding-top: .4%;
+	color: #00E1FF;
+	float: left;
+}
+
+.nav {
+	float: right;
+	padding-right: 2%;
+	margin-left: -2%;
+}
+
+div.nav li {
+    margin-top: .8%;
+	font-size: 300%;
+	list-style: none;
+	float: left;
+	max-width: 100%;
+}
+
+/*----------------------- body -----------------------*/
+.body {
+	width:100%;
+	max-height: 100;
+	margin:0;
+	padding:0;
+}
+
+.body h2 {
+	width: 100%;
+	display: inline-block;
+	font-family: caviardreams;
+	font-style: underline italic:
+}
+
+.blurImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+    top: 0;
+    left: 0;
+}
+.blurImg div {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.blur {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+/*----------------------- content -----------------------*/
+
+.content {
+	color: #000000;
+	background-color: #FFC2FC;
+	min-height: 200%;
+	overflow: hidden;
+	width: 40%;
+}
+
+.photoslot {
+    overflow: hidden;
+    float: right;
+    background-color: #FFC2FC;
+    max-height: 20%;
+    max-width: 30%;
+}
+
+.photoslot img {
+    padding-right: 10%;
+    max-width: 33%;
+    max-height: 33%;
+}
+
+.contentright {
+	display: inline-block;
+	background-color: #FFC2FC;
+	padding-top: 2%;
+	min-height: 200%;
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+
+.content a {
+	font-size: 24px;
+	color: white;
+	text-decoration:underline;
+	font-family: bebasneue;
+}
+
+.contentright a {
+	font-size: 24px;
+	color: inherit;
+	text-decoration:underline;
+	font-family: bebasneue;
+}
+
+.content .container {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.contentright .container {
+	width: 90%;
+	margin-right: 5%;
+	float: right;
+}
+
+.content h1 {
+	font-size: 300%;
+	margin-top: 5%;
+	margin-bottom: 0%;
+	color: inherit;
+	font-family: bebasneue;
+}
+
+.content h2 {
+	margin: 0%;
+  font-family: bebasneue;
+  font-size: 20px;
+  color: inherit;
+}
+
+.content p {
+	font-size: 150%;
+	float: right;
+	text-align: right;
+	margin-right: 1%;
+	font-family: caviardreams;
+	color: inherit;
+	padding-bottom: 5%;
+}
+
+.contentright h1 {
+	margin: 0%;
+	font-size: 300%;
+	color: inherit;
+	font-family: bebasneue;
+}
+
+.contentright h2 {
+  font-family: bebasneue;
+  font-size: 20px;
+  color: inherit;
+}
+
+.contentright p {
+	font-size: 150%;
+	font-family: caviardreams;
+	color: inherit;
+}
+
+.contentheader {
+  max-width: 70%;
+	font-size:52px;
+	color: white;
+	font-family: bebasneue;
+	text-align: left;
+	margin-bottom: -52px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.contentheaderright {\
+	display: inline-block;
+	margin-right: 2%;
+	font-size:52px;
+	color: white;
+	font-family: bebasneue;
+	float: right;
+	text-align: right;
+	width: 100%;
+}
+
+.titleheader {
+	display: inline-block;
+	max-width: 60%;
+	font-size: 800%;
+	color: white;
+	font-family: bebasneue;
+	text-align: left;
+	padding-top: 10%;
+	margin-bottom: -52px;
+	float: right;
+	text-align: right;
+}
+
+/*----------------------- footer -----------------------*/
+.footer {
+	font-family: bebasneue;
+	width: 100%;
+	background: #2D2D2D;
+	Height: 100px;
+}
+
+.footerbig {
+	margin-top:-35px;
+  height: 100px;
+  color: white;
+  font-size: 350%;
+  text-decoration: none;
+  float: left;
+  max-height: auto;
+}
+
+.footernav {
+  margin-top: 13px;
+  float: right;
+}
+
+.footernav li {
+  float: left;
+  font-size: 40px;
+  color: white;
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
