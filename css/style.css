@@ -30,14 +30,14 @@ html {
 .header {
 	font-family: bebasneue;
 	width: 100%;
-	background: #2D2D2D;
+	background-color: rgba(255,255,255,.8);
 	top: 0;
 	position: fixed;
 }
 
 div.header a {
 	opacity: 1;
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ div.header a:active {
 .logo {
   font-size: 500%;
   padding-top: .4%;
-	color: #00E1FF;
+	color: black;
 	float: left;
 }
 
@@ -63,12 +63,36 @@ div.header a:active {
 	margin-left: -2%;
 }
 
-div.nav li {
+div.nav ul li {
     margin-top: .8%;
 	font-size: 300%;
 	list-style: none;
 	float: left;
 	max-width: 100%;
+	position: relative;
+}
+
+div.nav ul li ul {
+	max-width: 500%;
+	display: none;
+	background-color: rgba(255,255,255,.8);
+	font-size: 30%;
+	list-style: none;
+	float: left;
+	position: absolute;
+	padding: 5%;
+}
+
+div.nav ul li ul a:hover{
+	color: gray;
+}
+
+div.nav ul li:hover ul{
+	display: block;
+}
+
+div.nav ul li ul li p{
+	margin: 0px;
 }
 
 /*----------------------- body -----------------------*/
@@ -111,30 +135,50 @@ div.nav li {
 /*----------------------- content -----------------------*/
 
 .content {
-	color: #000000;
-	background-color: #FFC2FC;
+	color: #3a3535;
+	background-color: #8bbabb;
 	min-height: 200%;
 	overflow: hidden;
 	width: 40%;
 }
 
 .photoslot {
-    overflow: hidden;
+    display: inline;
     float: right;
-    background-color: #FFC2FC;
-    max-height: 20%;
+    background-color: #8bbabb;
+    max-height: 1%;
     max-width: 30%;
 }
 
 .photoslot img {
-    padding-right: 10%;
-    max-width: 33%;
-    max-height: 33%;
+    margin-top: -10%;
+    margin-left: -20%;
+    margin-bottom: -10%;
+    padding-right: 5%;
+    max-width: 66%;
+    max-height: 66%;
+}
+
+.photoslotleft {
+    display: inline;
+    float: left;
+    background-color: #8bbabb;
+    max-height: 1%;
+    max-width: 30%;
+}
+
+.photoslotleft img {
+    float: right;
+    margin-top: -10%;
+    margin-right: -20%;
+    margin-bottom: -10%;
+    max-width: 66%;
+    max-height: 66%;
 }
 
 .contentright {
 	display: inline-block;
-	background-color: #FFC2FC;
+	background-color: #8bbabb;
 	padding-top: 2%;
 	min-height: 200%;
 	width: 40%;
@@ -212,9 +256,9 @@ div.nav li {
 }
 
 .contentheader {
-  max-width: 70%;
-	font-size:52px;
-	color: white;
+    max-width: 70%;
+    color: #6c7b95;
+	font-size: 400%;
 	font-family: bebasneue;
 	text-align: left;
 	margin-bottom: -52px;
@@ -225,8 +269,8 @@ div.nav li {
 .contentheaderright {\
 	display: inline-block;
 	margin-right: 2%;
-	font-size:52px;
-	color: white;
+	color: #6c7b95;
+	font-size: 400%;
 	font-family: bebasneue;
 	float: right;
 	text-align: right;
@@ -237,7 +281,7 @@ div.nav li {
 	display: inline-block;
 	max-width: 60%;
 	font-size: 800%;
-	color: white;
+	color: #464159;
 	font-family: bebasneue;
 	text-align: left;
 	padding-top: 10%;
@@ -250,14 +294,14 @@ div.nav li {
 .footer {
 	font-family: bebasneue;
 	width: 100%;
-	background: #2D2D2D;
+	background: #464159;
 	Height: 100px;
 }
 
 .footerbig {
 	margin-top:-35px;
   height: 100px;
-  color: white;
+  color: #c7f0db;
   font-size: 350%;
   text-decoration: none;
   float: left;
@@ -272,11 +316,11 @@ div.nav li {
 .footernav li {
   float: left;
   font-size: 40px;
-  color: white;
+  color: #c7f0db;
   list-style: none;
 }
 
 .footer a {
   text-decoration: none;
-  color: white;
+  color: #c7f0db;
 }
