@@ -33,6 +33,7 @@ html {
 	background-color: rgba(255,255,255,.8);
 	top: 0;
 	position: fixed;
+	display: flex;
 }
 
 div.header a {
@@ -50,17 +51,26 @@ div.header a:active {
 	margin: 0 auto;
 }
 
+.vcontainer {
+	height: 30%;
+	width: 90%;
+}
+
+
 .logo {
-  font-size: 500%;
-  padding-top: .4%;
+	font-size: 500%;
+	padding-top: 1%;
+	padding-left: 1%;
 	color: black;
 	float: left;
+	display: inline-block;
 }
 
 .nav {
+	display: inline-block;
 	float: right;
-	padding-right: 2%;
-	margin-left: -2%;
+	padding-top: .8%;
+	padding-right: 1%;
 }
 
 div.nav ul li {
