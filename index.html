@@ -1,120 +1,37 @@
-	<!DOCTYPE html>
-<html>
-
+ <!DOCTYPE HTML>
+ <html>
 	<head>
-	
 		<title>James Rivett</title>
-		<link href="css/header.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="css/footer.css" rel="stylesheet" type="text/css">
-		
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="css/sidebar.css" rel="stylesheet" type="text/css">
 	</head>
 	
-	<body class="body">
+	<div class="body">
+	<div class="menutab" onClick="menuToggle()">MENU &nbsp</div>
+	<div class="sidebar" id="sidebar">
+			<div>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="index.html">EMPLOYMENT</a></li>	
+					<li><a href="index.html">FREELANCE</a></li>
+					<li><a href="index.html">MUSIC</a></li>
+					<li><a href="index.html">ELECTRONICS</a></li>
+				</ul>
+			<div>
+		</div>
+	</div>
 	
-		<div class="blurImg">
-            <div style="background-image: url('images/IMG_5021.jpg')"></div>
-            <div class="blur" style="background-image: url('images/IMG_5021blur.jpg')"></div>
-        </div>
-
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/script.js"></script>
-	
-		<div class="header">
-			<div class="vcontainer">
-			
-				<div class="logo">
-					<a href="index.html">James Rivett</a>
-				</div>
-			<div class="nav">
-					<ul>
-						<li><a href="index.html">  Home  </a></li>
-						<li><a href="photography.html">  Photography  </a>
-							<ul>
-								<li><a href="design.html">gallery</a></li>
-								<li><a href="design.html">book a shoot</a></li>
-								<li><a href="design.html">modeling</a></li>
-							</ul>
-						</li>
-						<li><a href="design.html">  Design  </a>
-							<ul>
-								<li><a href="design.html">graphics</a></li>
-								<li><a href="design.html">custom electronics</a></li>
-								<li><a href="design.html">web</a></li>
-								<li><a href="design.html">drafting</a></li>
-							</ul>
-						</li>
-						<li><a href="music.html">  Music  </a></li>
-						<li><a href="employment.html">  Employment  </a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		
-		<div class="container">
-			<div class="titleheader">
-			  Your vision.<br> Your Needs. <br> My Job.
-			</div>
-		</div>
-		
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		
-		<div class="contentheader">
-		
-			<p><b><i>Who is James Rivett?</b></i></p>
-		
-		</div>
-		
-		
-		<div class="content">
-			<div class="container">
-				<h1><i>Short Answer: Whoever You Need Me To Be</i></h1>
-				<p><b>My diversified skillset centered around an education in computer science can prove to be quite useful in a multitude of situations. Hire me and find out!</b></p>
-			</div>
-			
-		</div>
-		
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		
-		<div class="contentheaderright">Adaptable</div>
-		<br><br><br><br>
-		<div class="contentright">
-			<div class="container">
-				<h1><i>Freelance or Payroll</i></h1>
-				<p><b>Whether you need quick work or a body in the office, I am your man. To Potential Employers: Thank you for considering me! Have a look around to see what I'm about.</b></p><br>
-			</div>
-		</div>
-		<br>
-		
-		<div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-		</div>
-			
-		<div class="footer">
-		  <div class="container">
-			<div class="footerbig">
-			  <p>hit me up:<p>
-			</div>
-			
-			<div class="footernav">
-			  <ul>
-				<li><a href="https://twitter.com/rxvett"> twitter </a></li>
-				<li><a href="https://instagram.com/rxvett"> instagram </a></li>
-			  </ul>
-			</div>
-		  </div>
-		</div>
-		
-	</body>
-
-
-
-
-
-
+	<script>
+		var toggle = 0;
+		function menuToggle() {
+			if (toggle == 0) {
+				document.getElementById("sidebar").style.left = '0%';
+				toggle = 1;
+			}
+			else {
+				document.getElementById("sidebar").style.left = '-400px';
+				toggle = 0;
+			}
+		}
+	</script>
 </html>

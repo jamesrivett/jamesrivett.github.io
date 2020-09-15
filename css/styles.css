@@ -1,0 +1,37 @@
+html {
+    width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+}
+
+@font-face{
+	font-family: bebasneue; src: url("../font/BebasNeue.otf");
+}
+
+@font-face {
+	font-family: caviardreams; src: url("../font/CaviarDreams.ttf");
+}
+
+.body{
+	
+}
+
+.container {
+	
+}
+
+.vcontainer {
+	
+}
+
+.header {
+	float: left;
+	width: 10%;
+	font-family: bebasneue;
+	color: #5d54a4;	
+}
+
+.header ul {
+	padding-left: 2%;
+}

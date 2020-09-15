@@ -1,0 +1,57 @@
+.sidebar {
+	display: inline-block;
+	position: fixed;
+	width: 40%;
+	float: left;
+	top: 20%;
+	left: -400px;
+	font-family: bebasneue;
+	font-size: 400%;
+	z-index: 9999;
+	color: #d789d7;
+	transition: .5s;
+}
+
+.menutab {
+	text-align: right;
+	display: block;
+	position: fixed;
+	width: 150px;
+	float: left;
+	top: 0%;
+	left: 0%;
+	font-family: bebasneue;
+	font-size: 400%;
+	z-index: 9999;
+	color: #d789d7;
+	background-color: #5d54a4;
+}
+
+.sidebar  ul {
+	margin: 0%;
+	padding: 0%;
+	float: left;
+}
+
+.sidebar  ul  li {
+	list-style-type: none;
+}
+
+.sidebar  ul  li  a {
+	color: #d789d7;
+}
+
+.sidebar  ul  li  a:link {
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #5d54a4;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.sidebar  ul  li  a:hover {
+	background-color: #9d65c9;
+	text-decoration: none;
+	padding-left: 5%;
+	transition: .5s;
+}
