@@ -14,6 +14,7 @@ html {
 }
 
 .img-src {
+    background-image: url('../images/avi.png');
     position: fixed;
     background-position: center;
     background-size: cover;
@@ -25,6 +26,7 @@ html {
 }
 
 .blurred-img {
+    background-image: url('../images/avi2.png') ;
     position: fixed;
     background-position: center;
     background-size: cover;
@@ -71,4 +73,15 @@ body {
     display: inline-block;
     height: 500px;
     width: 100%;
+}
+
+@media (max-width: 800px) {
+
+    .img-src {
+        background-image: url(../images/aviMobile.png);
+    }
+
+    .blurred-img {
+        background-image: url(../images/aviMobile.png);
+    }
 }
