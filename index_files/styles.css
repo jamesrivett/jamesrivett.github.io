@@ -1,8 +1,8 @@
 html {
     width: 100%;
     height: auto;
-    margin:0;
-    padding:0;
+    margin: 0px;
+    padding: 0px;
 }
 
 @font-face{
@@ -16,7 +16,7 @@ html {
 body {
     width: 100%;
     margin: 0px;
-    text-shadow: 2px 2px 5px #d88fd8;
+    text-shadow: 2px 2px 6px #d88fd8;
 }
 
 .img-src {
@@ -146,6 +146,31 @@ body {
     position: relative;
     top: -50px;
     left: 0px;
+}
+
+.buttonsContainer {
+    display: flex;
+    position: relative;
+    left: -510px;
+    padding-bottom: 10px;
+}
+
+.buttonsContainer button {
+    background-color: transparent;
+    color: #d88fd8;
+    text-shadow: 2px 2px 6px #d88fd8;
+    border: none;
+    width: 100px;
+    padding-bottom: 3px;
+    font-family: caviardreams;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.buttonsContainer button:hover {
+    background-color: #5d54a4;
+    transition: .5s;
 }
 
 @media (max-width: 1000px) {
