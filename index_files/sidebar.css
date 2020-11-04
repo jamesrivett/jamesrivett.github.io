@@ -1,5 +1,4 @@
 .sidebar {
-	display: inline-block;
 	position: fixed;
 	width: 40%;
 	float: left;
@@ -18,13 +17,20 @@
 	position: fixed;
 	width: 150px;
 	float: left;
-	top: 0%;
+	top: 50px;
 	left: 0%;
 	font-family: bebasneue;
-	font-size: 400%;
+	font-size: 200%;
 	z-index: 9999;
 	color: #d789d7;
-	background-color: #5d54a4;
+	background-color: #2a3d66d4;
+}
+
+.menutab h1 {
+	position: relative;
+	margin: 0px;
+	top: 2px;
+	left: 50px;
 }
 
 .sidebar  ul {
