@@ -7,7 +7,7 @@
 	font-family: bebasneue;
 	font-size: 400%;
 	z-index: 9999;
-	color: #d789d7d9;
+	color: #d789d7;
 	transition: .5s;
 }
 
@@ -22,7 +22,7 @@
 	font-family: bebasneue;
 	font-size: 200%;
 	z-index: 9999;
-	color: #d789d7;
+	color: #d88fd8;
 	background-color: #2a3d66d4;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .sidebar  ul  li  a {
-	color: #d789d7;
+	color: #d88fd8;
 }
 
 .sidebar  ul  li  a:link {
