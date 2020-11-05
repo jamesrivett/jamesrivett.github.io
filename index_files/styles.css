@@ -20,7 +20,7 @@ body {
 }
 
 .img-src {
-    background-image: url('../images/avi3.png');
+    background-image: url('../images/bg/avi3.png');
     position: fixed;
     background-position: center;
     background-size: cover;
@@ -32,7 +32,7 @@ body {
 }
 
 .blurred-img {
-    background-image: url('../images/avi4.png') ;
+    background-image: url('../images/bg/avi4.png') ;
     position: fixed;
     background-position: center;
     background-size: cover;
@@ -77,7 +77,6 @@ body {
     left: 0px;
     width: 900px;
     margin-right: 50%;
-    margin-top: 100px;
     text-align: right;
     font-family: bebasneue;
     z-index: 2;
@@ -151,7 +150,7 @@ body {
 .buttonsContainer {
     display: flex;
     position: relative;
-    left: -510px;
+    left: -505px;
     padding-bottom: 10px;
 }
 
@@ -171,6 +170,21 @@ body {
 .buttonsContainer button:hover {
     background-color: #5d54a4;
     transition: .5s;
+}
+
+.portFlex {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    float:  right;
+    margin-bottom: -120px;
+    margin-right: -90px;
+}
+
+.portFlex img {
+    position: relative;
+    width: 100%;
+    top: -70px;
 }
 
 @media (max-width: 1000px) {
