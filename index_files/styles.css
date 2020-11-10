@@ -181,6 +181,12 @@ body {
     margin-right: -90px;
 }
 
+.contentRight .portFlex {
+    float: left;
+    margin-left: -70px;
+    margin-top: 2px;
+}
+
 .portFlex img {
     position: relative;
     width: 100%;
