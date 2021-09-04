@@ -154,7 +154,7 @@ body {
 .buttonsContainer {
     display: flex;
     position: relative;
-    left: -505px;
+    right: -505px;
     padding-bottom: 10px;
 }
 
