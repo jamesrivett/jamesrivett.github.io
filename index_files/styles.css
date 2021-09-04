@@ -46,7 +46,7 @@ body {
 
 .header {
     float: right;
-    width: 800px;
+    width: 80vw;
     height: auto;
 }
 
@@ -57,7 +57,7 @@ body {
     padding-left: 20px;
     float: right;
     text-align: right;
-    font-size: 125px;
+    font-size: 8vw;
     font-family: bebasneue;
     color: #d88fd8;
 }
@@ -75,7 +75,7 @@ body {
     position: relative;
     top: 0px;
     left: 0px;
-    margin-right: 50%;
+    margin-right: 50vw;
     text-align: right;
     font-family: bebasneue;
     z-index: 2;
@@ -152,10 +152,12 @@ body {
 }
 
 .buttonsContainer {
+    float: right;
     display: flex;
+    align-items: flex-end;
     position: relative;
-    right: -505px;
     padding-bottom: 10px;
+    margin-right: -500px;
 }
 
 .buttonsContainer button {
@@ -197,18 +199,24 @@ body {
     top: -70px;
 }
 
+.arrow {
+    position: absolute;
+    display: hidden;
+    margin-left: 160vw;
+}
+
 @media (max-width: 1000px) {
 
     .img-src {
-        background-image: url(../images/aviMobile.png);
+        background-image: url(../images/mobilebg/avimobile.png);
     }
 
     .blurred-img {
-        background-image: url(../images/aviMobile2.png);
+        background-image: url(../images/mobilebg/avimobile2.png);
     }
 
-    .header { 
-        width: 100%;
+    .header h1{ 
+        font-size: 12vw;
     }
 
     .contentLeft {
@@ -219,5 +227,10 @@ body {
     .contentRight {
         width: 100%;
         text-align: center;
+    }
+
+    .arrow {
+        margin-left: 60vw;
+        transition: 1s;
     }
 }
