@@ -11,19 +11,19 @@ body {
     background-image: url(../img/banner.png);
     background-size: contain;
     width: 99vw;
-    max-width: 98%;
     height: 90vw;
+    max-width: 100%;
     background-repeat: no-repeat;
 }
 
 .banner img {
-    display: block;
+    display: none;
     position: absolute;
     width: 30vw;
 }
 
 .banner h1 {
-    display: block;
+    display: none;
     float: right;
     width: 50vw;
     padding-right: 3vw;
