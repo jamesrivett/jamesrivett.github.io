@@ -11,7 +11,7 @@ body {
     background-image: url(../img/banner.png);
     background-size: contain;
     width: 99vw;
-    max-width: 100%;
+    max-width: 98%;
     height: 90vw;
     background-repeat: no-repeat;
 }
