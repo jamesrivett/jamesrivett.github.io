@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./css/stylesnone.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".banner").hide();
+        });
+        window.setTimeout(function () {
+            $(".banner").fadeIn(1000);
+            $(".banner h1").fadeIn(1000);
+            $(".banner img").fadeIn(1000);
+        }, 500);
+    </script>
+
+    <script>
+        $(window).scroll(function  () {
+            if ($(window).scrollTop() > 5) {
+                $(".banner img").fadeOut(200);
+                $(".banner h1").fadeOut(200);
+            }
+            else {
+                $(".banner img").fadeIn(500);
+                $(".banner h1").fadeIn(500); 
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <img src="img/avi.png">
+        <h1>WELCOME TO POLYHEDRAL EARTH</h1>
+    </div>
+
+</body>
+</html>
