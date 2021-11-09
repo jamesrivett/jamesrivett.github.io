@@ -11,7 +11,7 @@ body {
     background-image: url(../img/banner.png);
     background-size: contain;
     width: 99vw;
-    height: 90vw;
+    height: 75vw;
     max-width: 100%;
     background-repeat: no-repeat;
 }
@@ -37,6 +37,31 @@ body {
     text-align: right;
 }
 
+.content {
+    margin: 0px;
+    color: #fd3ad2;
+    text-align: right;
+    padding-right: 3vw;
+}
+
+.content h1 {
+    margin: 0px;
+    font-family: bahnschrift;
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    font-style: italic;
+    font-size: 8vw;
+}
+
+.content p {
+    font-family: bahnschrift;
+    font-weight: 100;
+    font-size: 4vw;
+    margin: 0px;
+    color: #9b3dff;
+    text-align: right;
+}
+
 @media (max-width: 1000px) {
     .banner {
         background-image: url(../img/mobilebanner.png);
@@ -46,7 +71,7 @@ body {
     }
 
     .banner h1 {
-        padding-top: 28vw;
+        padding-top: 26vw;
         font-size: 10vw;
         width: 62vw;
     }
