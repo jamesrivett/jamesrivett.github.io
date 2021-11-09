@@ -1,0 +1,9 @@
+.spacer {
+    height: 10vw;
+}
+
+@media (max-width: 1000px) {
+    .spacer {
+        height: 50vw
+    }
+}
