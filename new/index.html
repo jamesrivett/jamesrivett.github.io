@@ -7,24 +7,20 @@
 
     <script>
         $(document).ready(function () {
-            $(".banner").hide();
+            $("body").find('*').hide();
         });
         window.setTimeout(function () {
-            $(".banner").fadeIn(1000);
-            $(".banner h1").fadeIn(1000);
-            $(".banner img").fadeIn(1000);
+            $("body").find('*').fadeIn(1000);
         }, 500);
     </script>
 
     <script>
         $(window).scroll(function  () {
             if ($(window).scrollTop() > 5) {
-                $(".banner img").fadeOut(200);
-                $(".banner h1").fadeOut(200);
+                $(".banner").find('*').fadeOut(200);
             }
             else {
-                $(".banner img").fadeIn(500);
-                $(".banner h1").fadeIn(500); 
+                $(".banner").find('*').fadeIn(500);
             }
         });
     </script>
