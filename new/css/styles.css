@@ -30,7 +30,7 @@ body {
     
     font-family: bahnschrift;
     font-weight: bold;
-    font-stretch: ultra-condensed;
+    font-stretch: condensed;
     font-style: italic;
     font-size: 7.5vw;
     color: #fd3ad2;
@@ -48,7 +48,7 @@ body {
     margin: 0px;
     font-family: bahnschrift;
     font-weight: bold;
-    font-stretch: ultra-condensed;
+    font-stretch: condensed;
     font-style: italic;
     font-size: 8vw;
 }
