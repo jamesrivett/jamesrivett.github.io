@@ -24,7 +24,6 @@
             }
             
             cOffset = $(".content").offset();
-            console.log($(window).scrollTop() + ($(window).height()-500) >= cOffset.top);
             if ($(window).scrollTop() + $(window).height() >= cOffset.top) {
                 $(".content").css("margin-right", "3vw");
             }
