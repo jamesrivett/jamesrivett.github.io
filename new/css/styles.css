@@ -65,6 +65,10 @@ body {
 }
 
 @media (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .banner {
         background-image: url(../img/mobilebanner.png);
         max-height: 5627px;
