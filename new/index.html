@@ -22,6 +22,15 @@
             else {
                 $(".banner").find('*').fadeIn(500);
             }
+            
+            cOffset = $(".content").offset();
+            console.log($(window).scrollTop() + ($(window).height()-500) >= cOffset.top);
+            if ($(window).scrollTop() + $(window).height() >= cOffset.top) {
+                $(".content").css("margin-right", "3vw");
+            }
+            else {
+                $(".content").css("margin-right", "-100vw");
+            }
         });
     </script>
 </head>
@@ -30,7 +39,7 @@
         <img src="img/avi.png">
         <h1>WELCOME TO POLYHEDRAL EARTH</h1>
     </div>
-    <div class="content">
+    <div class="content" >
         <h1>CONTENT HEADER</h1>
         <p>Content Content</p>
     </div>
