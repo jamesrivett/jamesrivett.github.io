@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SP-13 | Deliverables</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mystyles.css">
+  <meta name="robots" content="noindex, no follow, noarchive" />
+  <meta name="author" content="Sharon Perry" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+
+      <!-- official KSU colors gold #FFC425 and black #231F20 -->
+
+      <p align="center"> <br>
+        <img src="img/evt.jpeg" alt="KSU" width="100">
+      <h1>SP-13 | EVT</h1>
+    </header>
+    <nav>
+
+
+      <ul>
+        <li>Fall 2022</li><br>
+        <li><a href="index.html">SP-13 | HOME</a></li><br>
+        <li><a href="https://ksu_evt.gitlab.io/">Main KSUEVT Website</a></li><br>
+        <li><a href="deliverables.html">SP-13 | Deliverable Breakdown</a></li><br>
+        <p>
+
+          <!-- <li><a href = "mailto: abc@example.com">Email me.</a></li><br>  -->
+          <br>
+        <p>
+
+      </ul>
+
+    </nav>
+    <main>
+      <h2>ROS2/VNC Workspace Container</h2>
+      <p>
+        When solving problems with robotics, developers (ourselves included) often utilize a wide variety of
+        technologies on every level of the stack.
+        The Robot Operating System (ROS2) framework aims to consolidate the use of these components. The
+        term ‘Operating System’ in ROS2 is a misnomer in this case because it does not run on the bare metal of
+        the robot’s computer as one might expect. Instead, it runs as a regular process on an x86 machine.
+      </p>
+      <p>
+        Since it uses many low-level libraries to seamlessly communicate with various
+        hardware and software, ROS2 always needs to have access to the EXACT same set of libraries and
+        dependencies wherever it is run. Because of this, ROS2 only runs on a specific LTS release of Ubuntu;
+        one that is guaranteed to have all of these necessary libraries.
+      </p>
+      <p>
+        The issue is this: not everyone on EVT has the excess hardware, Linux experience, or even time to install
+        the specific version of Ubuntu needed to run and develop for ROS2. To remedy this, I've developed
+        a docker-based workspace that was intended to allow users of any OS to develop for Voltron’s ROS2 stack.
+        Within a few months, the workspace container was working perfectly when run on a Linux-baseed host OS.
+        When the time came to test the improved workpsace container on other operating systems, I encountered
+        many different issues ranging from permissions to networking. After myself and other members of the team
+        remediated as many of those issues as we could find, we still only got a black screen when starting the 
+        workspace under WSL or MacOS.
+      </p>
+      <br>
+      <br>
+
+      <h2>Steering Angle Motion Caputre Study</h2>
+      <p><span class="resort">BINGUS</p>
+      <ul>
+        <li>Wongus</li>
+        <li>Wongus</li>
+        <li>Wongus</li>
+      </ul>
+      <br>
+      <br>
+  </div>
+  </main>
+  </div>
+</body>
+
+</html>
