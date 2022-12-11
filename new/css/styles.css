@@ -9,7 +9,7 @@ body {
 }
 
 .banner {
-    background-image: url(../img/banner.png);
+    background-image: url('https://imgur.com/FKKSrdX');
     background-size: contain;
     width: 99vw;
     height: 75vw;
@@ -70,7 +70,7 @@ body {
     }
     
     .banner {
-        background-image: url(../img/mobilebanner.png);
+        background-image: url('https://imgur.com/PAkWPoY');
         max-height: 5627px;
         width: 100vw;
         height: 150vw;

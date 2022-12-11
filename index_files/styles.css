@@ -20,7 +20,7 @@ body {
 }
 
 .img-src {
-    background-image: url('../images/bg/avi3.png');
+    background-image: url('https://imgur.com/K962wmm.png');
     position: fixed;
     background-position: center;
     background-size: cover;
@@ -32,7 +32,7 @@ body {
 }
 
 .blurred-img {
-    background-image: url('../images/bg/avi4.png') ;
+    background-image: url('https://imgur.com/YJY3Ch5.png') ;
     position: fixed;
     background-position: center;
     background-size: cover;
@@ -208,11 +208,11 @@ body {
 @media (max-width: 1000px) {
 
     .img-src {
-        background-image: url(../images/mobilebg/avimobile.png);
+        background-image: url('https://imgur.com/KqpJqou.png');
     }
 
     .blurred-img {
-        background-image: url(../images/mobilebg/avimobile2.png);
+        background-image: url('https://imgur.com/tkrFPbD.png');
     }
 
     .header h1{ 
