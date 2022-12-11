@@ -23,9 +23,10 @@
 
 
       <ul>
-        <li>Fall 2022</li><br>
+        <li>MENU</li><br>
         <li><a href="index.html">SP-13 | HOME</a></li><br>
         <li><a href="deliverables.html">SP-13 | Deliverable Breakdown</a></li><br>
+        <li><a href="SP-13-FinalReportPackage.pdf">SP-13 | Full Report</a></li><br>
         <li><a href="https://ksu_evt.gitlab.io/">Main KSUEVT Website</a></li><br>
         <p>
 
@@ -61,16 +62,29 @@
         remediated as many of those issues as we could find, we still only got a black screen when starting the 
         workspace under WSL or MacOS.
       </p>
-      <br>
+      <p>
+        Since many of the Windows users on the team were already working on projects that didn’t
+        explicitly require the ROS2 workspace, we decided to abandon efforts on the VNC/ROS2 workspace and
+        move on to the steering study. While we didn’t achieve the main goal of platform-agnosticism, I learned
+        a lot about Docker during the process and we can still run the VNC server container on the EVT server 
+        for people to connect to remotely. It’s not running on their machine, but Windows and Mac users do
+        have a workspace to use if they need it. 
+      </p>
       <br>
 
       <h2>Steering Angle Motion Caputre Study</h2>
-      <p><span class="resort">BINGUS</p>
-      <ul>
-        <li>Wongus</li>
-        <li>Wongus</li>
-        <li>Wongus</li>
-      </ul>
+  
+      <p>
+
+      </p>
+      <p>
+        Our current autonomous system is chiefly controlled using Model Predictive Control (MPC). This model
+        considers multiple observed state variables in addition to the current input state to forecast
+        which control commands would bring the kart closest to the line it is trying to follow. The inherent issue
+        here is that our steering system is controlled by a commanded number of motor rotations, but our MPC
+        outputs a steering angle.
+      </p>
+
       <br>
       <br>
   </div>
