@@ -73,10 +73,6 @@
       <br>
 
       <h2>Steering Angle Motion Caputre Study</h2>
-  
-      <p>
-
-      </p>
       <p>
         Our current autonomous system is chiefly controlled using Model Predictive Control (MPC). This model
         considers multiple observed state variables in addition to the current input state to forecast
@@ -84,9 +80,23 @@
         here is that our steering system is controlled by a commanded number of motor rotations, but our MPC
         outputs a steering angle.
       </p>
-
-      <br>
-      <br>
+      <p>
+        As it is currently, that control unit is what handles the translation from steering angle
+        to motor position. Currently, this translation function is currently just an estimate; there was no
+        empirical data that motivated it and is therefore not as accurate as it could be. To remedy this, we studied
+        effective angle of the steering joint using motion capture technology, fitted a function to that data, then
+        used its inverse to get a motor position as the output when a requested angle is given as an input. This
+        means the resulting steering angle from the control unit should be much closer to what MPC deemed
+        optimal.
+      </p>
+      <p>
+        Here are some videos from that testing with the motion capture technology:
+      </p>
+      <ul>
+        <li><a href="https://tinyurl.com/evtvid1">VIDEO 1</a></li><br>
+        <li><a href="https://tinyurl.com/evtvid2">VIDEO 2</a></li><br>
+        <li><a href="https://tinyurl.com/evtvid3">VIDEO 3</a></li><br>
+      </ul>
   </div>
   </main>
   </div>
